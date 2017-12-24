@@ -1,0 +1,181 @@
+body {
+	background: #21252b;
+	color: #333;
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	font-size: 16px;
+	outline: none;
+}
+
+input, button {
+	border: 0;
+	padding: 10px;
+}
+
+.mainDiv {
+	background: #fff;
+	padding: 20px;
+	width: 450px;
+	margin: 0px auto;
+	margin-top: 200px;
+	box-shadow: 0 0 20px #333;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 24px;
+}
+
+textarea {
+	border: 0px;
+	background: #fff;
+	padding: 20px 0px;
+	outline: none;
+	width: 100%;
+	resize: none;
+}
+
+#checkbox {
+	padding: 20px 0px;
+	outline: none;
+	width: 100%;
+	resize: none;
+}
+
+button {
+	background: #528bff;
+	color: #fff;
+	position: relative;
+	top: 50px;
+	width: 64px;
+	height: 64px;
+	line-height: 38px;
+	border-radius: 100%;
+}
+
+.logo-size {
+	height: 80px;
+	width: 200px;
+}
+/* index.html style */
+header.masthead {
+	text-align: left;
+	color: white;
+	background-image: url("./img/header-bg.jpg");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  }
+  
+	 header.masthead .intro-text {
+	  padding-top: 150px;
+	  padding-bottom: 80px;
+  
+	}
+  
+	  .btn-xl {
+	  color: #603b1a;
+	  font-size: 15px;
+	  font-weight: 700;
+	  padding: 15px 25px;
+	  border-radius: 3px;
+	  border-width: 4px;
+	  background-color: #fbd457;
+	  border-color: #603b1a;
+	  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	  text-transform: uppercase;
+	}
+  
+  
+  @media (min-width: 768px) {
+  
+	header.masthead .intro-text {
+	  padding-top: 100px;
+	  padding-bottom: 140px;
+  
+	}
+  
+		.btn-xl {
+		color: #603b1a;
+		font-size: 18px;
+		font-weight: 700;
+		padding: 20px 40px;
+		margin: 249px 0 188px 0;
+		border-radius: 3px;
+		border-width: 4px;
+		background-color: #fbd457;
+		border-color: #603b1a;
+		font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		text-transform: uppercase;
+		}
+  
+	 }
+	 header.masthead {
+  text-align: left;
+  color: white;
+  background-image: url("./img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+   header.masthead .intro-text {
+    padding-top: 150px;
+    padding-bottom: 80px;
+
+  }
+
+    .btn-xl {
+    color: #603b1a;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px 25px;
+    border-radius: 3px;
+    border-width: 4px;
+    background-color: #fbd457;
+    border-color: #603b1a;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+  }
+
+
+@media (min-width: 768px) {
+
+  header.masthead .intro-text {
+    padding-top: 100px;
+    padding-bottom: 140px;
+
+  }
+
+      .btn-xl {
+      color: #603b1a;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 20px 40px;
+      margin: 249px 0 188px 0;
+      border-radius: 3px;
+      border-width: 4px;
+      background-color: #fbd457;
+      border-color: #603b1a;
+      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      }
+
+   }
+   /* index.html ends */
