@@ -17,7 +17,7 @@
 <body>
 
     <div class="mainDiv">
-        <form action="" id="signup" name="signup" onsubmit="return(validate());">
+        <form id="signup" action="submit.php" method="POST">
             <h2>Sign Up Here:</h2>
             <div class="form-group">
                 <input type="name" class="form-control" id="teamName" name="teamName" placeholder="Team Name">
@@ -48,7 +48,7 @@
                     <input id="agree" name="checkbox" type="checkbox" value="check">I agree to the <a href="t&c.html" target="_blank">Terms and Conditions</a>
                 </label>
             </div>
-            <button type="submit" align="right" id="submitBtn" onclick="submitClick()">
+            <button type="submit" id="submitBtn">
                 <i class="fa fa-arrow-right" aria-hidden="true"></i>
             </button>
 
