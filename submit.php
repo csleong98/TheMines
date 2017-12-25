@@ -11,55 +11,41 @@
     $passnum2 = mysqli_real_escape_string($conn, $_POST['pass2']);
     $phonenum2 = mysqli_real_escape_string($conn, $_POST['phone2']);
 
-    // if ($teamname = "") {
-    //     echo "<script>alert('Team name is not inserted!');";
-    //     die("window.history.go(-1);</script>");  
-    // }
 
-    //     elseif ($player1 = "") {
-    //         echo "<script>alert('Player 1 name is not inserted!');";
-    //         die("window.history.go(-1);</script>");   
-    //       }
+    if ($teamname == '') {
+        echo "<script>alert('Team name is not inserted!');";
+        die("window.history.go(-1);</script>");  
+    }
 
-    //         elseif (ctype_digit($passnum1)) {
-    //             echo "number 1";
-    //         }
-    //         // else {
-    //         //     echo "<script>alert('Player 1 passport is not inserted or is not a number');";
-    //         //     die("window.history.go(-1);</script>");  
-    //         // }
+        elseif ($player1 == '') {
+            echo "<script>alert('Player 1 name is not inserted!');";
+            die("window.history.go(-1);</script>");   
+          }
 
-    //         elseif (ctype_digit($phonenum1)) {
-    //             echo "phone 1";
-    //         }
-    //         // else {
-    //         //     echo "<script>alert('Player 1 phone number is not inserted or is not a number');";
-    //         //     die("window.history.go(-1);</script>");  
-    //         // }
+            elseif (!is_numeric($passnum1)) {
+                echo "<script>alert('Player 1 passport is not a number');";
+                die("window.history.go(-1);</script>");  
+            }
 
+                elseif (!is_numeric($phonenum1)) {
+                    echo "<script>alert('Player 1 phone number is not a number');";
+                    die("window.history.go(-1);</script>");  
+                }
 
-    //       if ($player2 = "") {
-    //         echo "<script>alert('Player 2 name is not inserted!');";
-    //         die("window.history.go(-1);</script>");   
-    //       }
-    //       else {
-    //         if (is_numeric($passnum2)) {
-    //             echo "number 2";
-    //         }
-    //         else {
-    //             echo "<script>alert('Player 2 passport is not inserted or is not a number');";
-    //             die("window.history.go(-1);</script>");  
-    //         }
-
-    //         if (is_numeric($phonenum2)) {
-    //             echo "phone 2";
-    //         }
-    //         else {
-    //             echo "<script>alert('Player 2 phone number is not inserted or is not a number');";
-    //             die("window.history.go(-1);</script>");  
-    //         }
+                elseif ($player2 == '') {
+                    echo "<script>alert('Player 2 name is not inserted!');";
+                    die("window.history.go(-1);</script>");   
+                  }
         
-    //       }
+                    elseif (!is_numeric($passnum2)) {
+                        echo "<script>alert('Player 2 passport is not a number');";
+                        die("window.history.go(-1);</script>");  
+                    }
+        
+                        elseif (!is_numeric($phonenum2)) {
+                            echo "<script>alert('Player 2 phone number is not a number');";
+                            die("window.history.go(-1);</script>");  
+                        }
 
           if(isset($_POST['check']) && $_POST['check']="1")
           {
