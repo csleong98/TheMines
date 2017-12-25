@@ -45,7 +45,7 @@
             </div>
             <div class="checkbox">
                 <label>
-                    <input id="agree" name="checkbox" type="checkbox" value="check">I agree to the <a href="t&c.html" target="_blank">Terms and Conditions</a>
+                    <input id="agree" name="check" type="checkbox" value="1">I agree to the <a href="t&c.html" target="_blank">Terms and Conditions</a>
                 </label>
             </div>
             <button type="submit" id="submitBtn">
@@ -66,8 +66,8 @@
         <label id="checkbox"><input  type="checkbox"/>I agree to the <a href="t&c.html" target="_blank">Terms and Conditions</a></label> 
         <button id="submitBtn" onCLick="submitClick()"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>		
      -->
-    <!-- </div>
-    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    </div>
+    <!-- <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
     <script>
         // Initialize Firebase
         var config = {
@@ -81,8 +81,8 @@
         firebase.initializeApp(config);
     </script>
 
-    <script src="signup.js"></script> -->
-
+    <script src="signup.js"></script> --> -->
+    
 </body>
 
 </html>
