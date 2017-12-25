@@ -11,6 +11,50 @@
     $passnum2 = mysqli_real_escape_string($conn, $_POST['pass2']);
     $phonenum2 = mysqli_real_escape_string($conn, $_POST['phone2']);
 
+    $sqlcheck = "SELECT * FROM team";
+    $result = mysqli_query($conn, $sqlcheck);
+
+    // if(mysqli_num_rows($result)<=0) {
+    //     echo "no results";
+    // }
+    // else 
+    // {
+        if($rows = mysqli_fetch_array($result)) {
+            if($rows['teamName'] == $teamname) {
+                echo "<script>alert('Team name already registered');";
+                die("window.history.go(-1);</script>");  
+            }
+                elseif($rows['email'] == $email) {
+                    echo "<script>alert('Email already registered');";
+                    die("window.history.go(-1);</script>"); 
+                }
+                    elseif($rows['player1'] == $player1) {
+                        echo "<script>alert('Player name already registered');";
+                        die("window.history.go(-1);</script>"); 
+                    }
+                        elseif($rows['pass1'] == $passnum1) {
+                            echo "<script>alert('IC /Passport number already registered');";
+                            die("window.history.go(-1);</script>"); 
+                        }
+                            elseif($rows['phone1'] == $phonenum1) {
+                                echo "<script>alert('Phone number already registered');";
+                                die("window.history.go(-1);</script>"); 
+                            }
+                                elseif($rows['player2'] == $player2) {
+                                    echo "<script>alert('Player name already registered');";
+                                    die("window.history.go(-1);</script>"); 
+                                }
+                                    elseif($rows['pass2'] == $passnum2) {
+                                        echo "<script>alert('IC /Passport number already registered');";
+                                        die("window.history.go(-1);</script>"); 
+                                    }
+                                        elseif($rows['phone2'] == $phonenum2) {
+                                            echo "<script>alert('Phone number already registered');";
+                                            die("window.history.go(-1);</script>"); 
+                                        }
+        }
+        
+    // }
 
     if ($teamname == '') {
         echo "<script>alert('Team name is not inserted!');";
@@ -68,84 +112,4 @@
             echo "<script>alert('Terms & Conditions is not checked');";
             die("window.history.go(-1);</script>");  
           }
-
-
-    
-
-    
-
-    
-
-    
-
-    // // define variables and set to empty values
-    // $teamnameErr = $emailErr = $player1Err = $passnum1Err = $phonenum1Err = $player2Err = $passnum2Err = $phonenum2Err = "";
-    // // $name = $email = $gender = $comment = $website = "";
-    // if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        
-    // if (empty($_POST["teamName"])) {
-    //     $teamnameErr = "Name is required";
-    // } else {
-    //     $teamname = test_input($_POST["teamName"]);
-    // }
-
-    // if (empty($_POST["email"])) {
-    //     $emailErr = "Email is required";
-    // } else {
-    //     $email = test_input($_POST["email"]);
-    // }
-
-    // if (empty($_POST["player1"])) {
-    //     $player1Err = "Please fill in player1's name";
-    // } else {
-    //     $player1 = test_input($_POST["player1"]);
-    // }
-
-    // if (empty($_POST["pass1"])) {
-    //     $passnum1Err = "Please fill in player1's passport number";
-    // } else {
-    //     $passnum1 = test_input($_POST["pass1"]);
-    // }
-
-    // if (empty($_POST["phone1"])) {
-    //     $phonenum1Err = "Please fill in phone number";
-    // } else {
-    //     $phonenum1 = test_input($_POST["phone1"]);
-    // }
-
-    // if (empty($_POST["player2"])) {
-    //     $player2Err = "Please fill in player2's name";
-    // } else {
-    //     $player2 = test_input($_POST["player2"]);
-    // }
-
-    // if (empty($_POST["pass2"])) {
-    //     $passnum2Err = "Please fill in player2's passport number";
-    // } else {
-    //     $passnum2 = test_input($_POST["pass2"]);
-    // }
-
-    // if (empty($_POST["phone2"])) {
-    //     $phonenum2Err = "Please fill in phone numberr";
-    // } else {
-    //     $phonenum2 = test_input($_POST["phone2"]);
-    // }
-
-    // }
-
-    // function test_input($data) {
-    //     $data = trim($data);
-    //     $data = stripcslashes($data);
-    //     $data = htmlspecialchars($data);
-    //     return $data;
-    // }
-
-    // echo $teamname;
-    // echo $email;
-    // echo $player1;
-    // echo $passnum1;
-    // echo $phonenum1;
-    // echo $player2;
-    // echo $passnum2;
-    // // echo $phonenum2;
 ?>
