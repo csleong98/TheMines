@@ -20,35 +20,35 @@
     // else 
     // {
         if($rows = mysqli_fetch_array($result)) {
-            if($rows['teamName'] == $teamname) {
+            if($rows['teamName'] === $teamname) {
                 echo "<script>alert('Team name already registered');";
                 die("window.history.go(-1);</script>");  
             }
-                elseif($rows['email'] == $email) {
+                elseif($rows['email'] === $email) {
                     echo "<script>alert('Email already registered');";
                     die("window.history.go(-1);</script>"); 
                 }
-                    elseif($rows['player1'] == $player1) {
+                    elseif($rows['player1'] === $player1) {
                         echo "<script>alert('Player name already registered');";
                         die("window.history.go(-1);</script>"); 
                     }
-                        elseif($rows['pass1'] == $passnum1) {
+                        elseif($rows['pass1'] === $passnum1) {
                             echo "<script>alert('IC /Passport number already registered');";
                             die("window.history.go(-1);</script>"); 
                         }
-                            elseif($rows['phone1'] == $phonenum1) {
+                            elseif($rows['phone1'] === $phonenum1) {
                                 echo "<script>alert('Phone number already registered');";
                                 die("window.history.go(-1);</script>"); 
                             }
-                                elseif($rows['player2'] == $player2) {
+                                elseif($rows['player2'] === $player2) {
                                     echo "<script>alert('Player name already registered');";
                                     die("window.history.go(-1);</script>"); 
                                 }
-                                    elseif($rows['pass2'] == $passnum2) {
+                                    elseif($rows['pass2'] === $passnum2) {
                                         echo "<script>alert('IC /Passport number already registered');";
                                         die("window.history.go(-1);</script>"); 
                                     }
-                                        elseif($rows['phone2'] == $phonenum2) {
+                                        elseif($rows['phone2'] === $phonenum2) {
                                             echo "<script>alert('Phone number already registered');";
                                             die("window.history.go(-1);</script>"); 
                                         }
