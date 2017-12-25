@@ -25,10 +25,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `rooms`
+-- Table structure for table `team`
 --
 
-CREATE TABLE `rooms` (
+CREATE TABLE `team` (
   `Number` int(100) NOT NULL,
   `teamName` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
@@ -45,9 +45,9 @@ CREATE TABLE `rooms` (
 --
 
 --
--- Indexes for table `rooms`
+-- Indexes for table `team`
 --
-ALTER TABLE `rooms`
+ALTER TABLE `team`
   ADD PRIMARY KEY (`Number`);
 
 --
@@ -55,9 +55,9 @@ ALTER TABLE `rooms`
 --
 
 --
--- AUTO_INCREMENT for table `rooms`
+-- AUTO_INCREMENT for table `team`
 --
-ALTER TABLE `rooms`
+ALTER TABLE `team`
   MODIFY `Number` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
