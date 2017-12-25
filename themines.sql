@@ -40,14 +40,14 @@ CREATE TABLE IF NOT EXISTS `team` (
   `pass2` varchar(255) NOT NULL,
   `phone2` int(100) NOT NULL,
   PRIMARY KEY (`Number`)
-) ENGINE=MyISAM AUTO_INCREMENT=29 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `team`
 --
 
 INSERT INTO `team` (`Number`, `teamName`, `email`, `player1`, `pass1`, `phone1`, `player2`, `pass2`, `phone2`) VALUES
-(28, 'asdas', 'ms.catwong@gmail.com', 'LEONG CHEE SENG', '123', 97, 'LEONG CHEE SENG', '123', 9);
+(0, 'asdas', 'ms.catwong@gmail.com', 'LEONG CHEE SENG', '123', 97, 'LEONG CHEE SENG', '123', 9);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
