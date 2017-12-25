@@ -11,7 +11,6 @@
     $passnum2 = mysqli_real_escape_string($conn, $_POST['pass2']);
     $phonenum2 = mysqli_real_escape_string($conn, $_POST['phone2']);
 
-    
     // if ($teamname = "") {
     //     echo "<script>alert('Team name is not inserted!');";
     //     die("window.history.go(-1);</script>");  
