@@ -1,5 +1,5 @@
 <?php 
-	$db = mysqli_connect('boleh.tv', 'boleh', 'TWSB2018', 'boleh_test');
+	$db = mysqli_connect('localhost', 'root', '', 'test');
 
 	if (isset($_POST['username_check'])) {
 		$username = $_POST['username'];

@@ -1,3 +1,41 @@
+$('document').ready(function(){
+    var teamname_state = false;
+
+    $('#teamName').on('blur', function(){
+        var teamname = $('#teamName').val();
+
+        if(teamname == '') {
+            teamname_state = false;
+            return;
+        }
+
+        $.ajax({
+            url: 'submit.php',
+            type: 'post',
+            data: {
+                'teamname_check' : 1,
+                'teamname' : teamname,
+            },
+            success: function(response){
+                if (response == 'taken') {
+                    teamname_state = false;
+                    $('#teamName').parent().removeClass();
+                    $('#teamName').parent().addClass("form_error");
+                    $('#teamName').siblings("span").text('Sorry... Team Name already taken');
+                }
+                else if (response == 'not taken') {
+                    teamname_state = true;
+                    $('#teamName').parent().removeClass();
+                    $('#teamNmae').parent().addClass("form_success");
+                    $('#teamName').siblings("span").text('Team Name Available');
+                }
+            }
+        })
+    });
+});
+
+
+
 // var teamName = document.signup.teamName.value ;
 // var email = document.signup.email.value;
 // var name1 = document.signup.name1.value;

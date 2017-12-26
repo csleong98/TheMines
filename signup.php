@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include 'submit.php';?>
 <html>
 
 <head>
@@ -24,7 +25,9 @@
             <h1>Sign Up Here:</h1>
             <div class="form-group-lg">
                 <input type="name" class="form-control input-lg" id="teamName" name="teamName" placeholder="Team Name" required>
+                <span></span>                
             </div>
+            <span></span>
             <div class="form-group-lg">
                 <input type="email" class="form-control input-lg" id="email" name="email" placeholder="Email" required>
             </div>
@@ -59,6 +62,10 @@
             </div>
         </form>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="signup.js"></script>
 </body>
 
 </html>
