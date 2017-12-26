@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <script src="https://use.fontawesome.com/939e9dd52c.js"></script>
-   
+
 
 </head>
 
@@ -18,71 +18,44 @@
 
     <div class="container">
         <form id="signup" action="submit.php" method="POST">
-            <h2>Sign Up Here:</h2>
-            <div class="form-group">
-                <input type="name" class="form-control" id="teamName" name="teamName" placeholder="Team Name">
+            <h1>Sign Up Here:</h1>
+            <div class="form-group-lg">
+                <input type="name" class="form-control input-lg" id="teamName" name="teamName" placeholder="Team Name" required>
             </div>
-            <div class="form-group">
-                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+            <div class="form-group-lg">
+                <input type="email" class="form-control input-lg" id="email" name="email" placeholder="Email" required>
             </div>
-            <div class="form-group">
-                <input type="name" class="form-control" id="name1" name="name1" placeholder="Player 1 Name">
+            <div class="form-group-lg">
+                <input type="name" class="form-control input-lg" id="name1" name="name1" placeholder="Player 1 Name" required>
             </div>
-            <div class="form-group">
-                <input type="text" class="form-control" id="passport1" name="pass1" placeholder="Player 1 Passport">
+            <div class="form-group-lg">
+                <input type="text" class="form-control input-lg" id="passport1" name="pass1" placeholder="Player 1 IC/Passport" required>
             </div>
-            <div class="form-group">
-                <input type="text" class="form-control" id="phone1" name="phone1" placeholder="Player 1 Phone Number">
+            <div class="form-group-lg">
+                <input type="text" class="form-control input-lg" id="phone1" name="phone1" placeholder="Player 1 Phone Number" required>
             </div>
-            <div class="form-group">
-                <input type="name" class="form-control" id="name2" name="name2" placeholder="Player 2 Name">
+            <div class="form-group-lg">
+                <input type="name" class="form-control input-lg" id="name2" name="name2" placeholder="Player 2 Name" required>
             </div>
-            <div class="form-group">
-                <input type="text" class="form-control" id="passport2" name="pass2" placeholder="Player 2 Passport">
+            <div class="form-group-lg">
+                <input type="text" class="form-control input-lg" id="passport2" name="pass2" placeholder="Player 2 IC/Passport" required>
             </div>
-            <div class="form-group">
-                <input type="text" class="form-control" id="phone2" name="phone2" placeholder="Player 2 Phone Number">
+            <div class="form-group-lg">
+                <input type="text" class="form-control input-lg" id="phone2" name="phone2" placeholder="Player 2 Phone Number" required>
             </div>
-            <div class="checkbox">
+            <div class="checkbox ">
                 <label>
-                    <input id="agree" name="check" type="checkbox" value="1">I agree to the <a href="t&c.html" target="_blank">Terms and Conditions</a>
+                    <input id="agree" name="check" type="checkbox" value="1">I agree to the
+                    <a href="t&c.html" target="_blank">Terms and Conditions</a>
                 </label>
             </div>
-            <button type="submit" id="submitBtn">
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            </button>
-
+            <div class="form-group-lg">
+                <button class="btn btn-primary btn-lg btn-block" type="submit">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </button>
+            </div>
         </form>
-        <!-- 
-		<h1 align="left">Sign Up Here:</h1>
-		<textarea id="teamName" placeholder="Team Name"></textarea>
-		<textarea id="email" placeholder="Main Email"></textarea>
-		<textarea id="name1" placeholder="Player 1 Full Name"></textarea>
-		<textarea id="passport1" placeholder="Player 1 NRIC/Passport"></textarea>
-		<textarea id="phone1" placeholder="Player 1 Phone No"></textarea>
-		<textarea id="name2" placeholder="Player 2 Full Name"></textarea>
-		<textarea id="passport2" placeholder="Player 2 NRIC/Passport"></textarea>
-        <textarea id="phone2" placeholder="Player 2 Phone No"></textarea>
-        <label id="checkbox"><input  type="checkbox"/>I agree to the <a href="t&c.html" target="_blank">Terms and Conditions</a></label> 
-        <button id="submitBtn" onCLick="submitClick()"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>		
-     -->
     </div>
-    <!-- <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyDWQUh1HRCEfISKSSmx9EWhPH9PswMHtPo",
-            authDomain: "kinectapp-9bf58.firebaseapp.com",
-            databaseURL: "https://kinectapp-9bf58.firebaseio.com",
-            projectId: "kinectapp-9bf58",
-            storageBucket: "kinectapp-9bf58.appspot.com",
-            messagingSenderId: "812526179555"
-        };
-        firebase.initializeApp(config);
-    </script>
-
-    <script src="signup.js"></script> -->
-    
 </body>
 
 </html>
