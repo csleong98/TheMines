@@ -1,6 +1,6 @@
 <?php
-	// $conn = mysqli_connect("boleh.tv","boleh","TWSB2018","boleh_mines2017");
-	$conn = mysqli_connect("localhost","root","","themines");
+	$conn = mysqli_connect("boleh.tv","boleh","TWSB2018","boleh_mines2017");
+	// $conn = mysqli_connect("localhost","root","","themines");
 	
 	if(mysqli_connect_errno())
 	{
