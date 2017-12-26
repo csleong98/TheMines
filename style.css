@@ -21,19 +21,8 @@ button {
 	padding: 10px;
 }
 
-
-/* .mainDiv {
-	background: #fff;
-	padding: 20px;
-	width: 450px;
-	margin: 0px auto;
-	margin-top: 200px;
-	box-shadow: 0 0 20px #333;
-} */
-
-h1 {
-	font-weight: 300;
-	font-size: 24px;
+.form-group-lg {
+	margin-bottom: 15px;
 }
 
 #checkbox {
@@ -41,17 +30,6 @@ h1 {
 	outline: none;
 	width: 100%;
 	resize: none;
-}
-
-button {
-	background: #528bff;
-	color: #fff;
-	position: relative;
-	top: 50px;
-	width: 64px;
-	height: 64px;
-	line-height: 38px;
-	border-radius: 100%;
 }
 
 .logo-size {
