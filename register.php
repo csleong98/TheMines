@@ -75,7 +75,7 @@
 					<li class="text-justify">The prizes are worth RM30,000.00 in total which will be won by top 30 scorers with the highest marks with the least
 						life deducted.</li>
 					<br>
-					<li class="text-justify">Each team is entitled to win one (1) set of prizes only. Prizes not redeemed on the same day will be forfeited.</li>
+					<li class="text-justify">Each team is entitled to win one (1) set of prizes only. Prizes not redeemed on the same day during the annoucement will be forfeited.</li>
 					<br>
 					<li class="text-justify">All prizes are non-transferable and non-exchangeable for cash and the Organizer shall not be liable for any damages
 						on the prize.</li>
