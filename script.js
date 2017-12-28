@@ -346,7 +346,7 @@
 							$('#player2').val('');
 							$('#pass2').val('');
 							$('#phone2').val('');
-							location.reload();
+							location.replace("./tutorial.html");
 						
 					}
 				});

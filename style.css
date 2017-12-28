@@ -1,12 +1,3 @@
-/* body {
-	background: #21252b;
-	color: #333;
-	font-size: 14px;
-	font-family: 'Raleway', sans-serif;
-	padding: 0;
-	margin: 0;
-} */
-
 * {
 	box-sizing: border-box;
 	font-family: 'Raleway', sans-serif;
@@ -25,6 +16,11 @@ button {
 	margin-bottom: 15px;
 }
 
+.tc {
+	height: 200px;
+	overflow-y: auto;
+}
+
 #checkbox {
 	padding: 20px 0px;
 	outline: none;
@@ -36,7 +32,6 @@ button {
 	height: 80px;
 	width: 200px;
 }
-
 
 /* index.html style */
 
@@ -102,6 +97,33 @@ header.masthead {
 		-o-background-size: cover;
 		background-size: cover;
 	}
+}
+
+.form_error span {
+	font-size: 1.1em;
+	color: #D83D5A;
+}
+
+.form_error input {
+	border: 1px solid #D83D5A;
+}
+
+
+/*Styling in case no errors on form*/
+
+.form_success span {
+	font-size: 1.1em;
+	color: green;
+}
+
+.form_success input {
+	border: 1px solid green;
+}
+
+#error_msg {
+	color: red;
+	text-align: center;
+	margin: 10px auto;
 }
 
 

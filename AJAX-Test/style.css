@@ -16,6 +16,11 @@ button {
 	margin-bottom: 15px;
 }
 
+.tc {
+	height: 200px;
+	overflow-y: auto;
+}
+
 #checkbox {
 	padding: 20px 0px;
 	outline: none;
@@ -27,7 +32,6 @@ button {
 	height: 80px;
 	width: 200px;
 }
-
 
 /* index.html style */
 
