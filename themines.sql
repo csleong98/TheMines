@@ -34,10 +34,10 @@ CREATE TABLE IF NOT EXISTS `team` (
   `teamName` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `player1` varchar(255) NOT NULL,
-  `pass1` varchar(255) NOT NULL,
+  `pass1` int(100) NOT NULL,
   `phone1` int(100) NOT NULL,
   `player2` varchar(255) NOT NULL,
-  `pass2` varchar(255) NOT NULL,
+  `pass2` int(100) NOT NULL,
   `phone2` int(100) NOT NULL,
   PRIMARY KEY (`Number`)
 ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
@@ -45,10 +45,6 @@ CREATE TABLE IF NOT EXISTS `team` (
 --
 -- Dumping data for table `team`
 --
-
-INSERT INTO `team` (`Number`, `teamName`, `email`, `player1`, `pass1`, `phone1`, `player2`, `pass2`, `phone2`) VALUES
-(0, 'asdas', 'ms.catwong@gmail.com', 'LEONG CHEE SENG', '123', 97, 'LEONG CHEE SENG', '123', 9);
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
