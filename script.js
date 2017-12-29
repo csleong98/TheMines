@@ -337,6 +337,7 @@
 						'phone2': phone2
 					},
 					success: function (response) {
+						if (response == 'saved') {
 							alert('Registered Successfully. Please proceed to game area');
 							$('#teamname').val('');
 							$('#email').val('');
@@ -347,6 +348,7 @@
 							$('#pass2').val('');
 							$('#phone2').val('');
 							location.replace("./tutorial.html");
+						}
 						
 					}
 				});

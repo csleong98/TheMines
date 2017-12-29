@@ -136,13 +136,11 @@
 		$results = mysqli_query($db, $sql);
 
 		if (mysqli_num_rows($results) >= 0) {
-			echo "exists";	
-			exit();
-		}else{
-			$query = "INSERT INTO team (teamname, email, player1, pass1, phone1, player2, pass2, phone2) 
+		
+			$query = "INSERT INTO team (teamName, email, player1, pass1, phone1, player2, pass2, phone2) 
 					VALUES ('$teamname', '$email', '$player1', '$pass1', '$phone1', '$player2', '$pass1', '$phone2')";
 			$results = mysqli_query($db, $query);
-			echo 'Saved!';
+			echo 'saved';
 			exit();
 		}
 	}
