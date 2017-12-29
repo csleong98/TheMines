@@ -33,7 +33,10 @@ button {
 	width: 200px;
 }
 
+
 /* index.html style */
+
+
 /* body.masthead {
 	position: relative;
 	text-align: left;
@@ -46,6 +49,7 @@ button {
 	-o-background-size: cover;
 	background-size: cover;
 } */
+
 body {
 	position: relative;
 }
@@ -53,49 +57,17 @@ body {
 .img-responsive {
 	position: relative;
 }
-@media (min-width: 350px) {
-	.btn-xl {
-		z-index: 1;
-		position: absolute;
-		color: #603b1a;
-		font-size: 15px;
-		font-weight: 700;
-		padding: 20px 25px;
-		margin-top: 180px;
-		border-radius: 3px;
-		border-width: 4px;
-		background-color: #fbd457;
-		border-color: #603b1a;
-		font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-		text-transform: uppercase;
-	}
-   
-}
-@media (max-width: 400px) {
-	.btn-xl {
-		z-index: 1;
-		position: absolute;
-		color: #603b1a;
-		font-size: 15px;
-		font-weight: 700;
-		padding: 20px 25px;
-		margin-top: 110px;
-		border-radius: 3px;
-		border-width: 4px;
-		background-color: #fbd457;
-		border-color: #603b1a;
-		font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-		text-transform: uppercase;
-	}
-   
-}
+
 .btn-xl {
 	z-index: 1;
+	width: 20%;
 	position: absolute;
 	color: #603b1a;
 	font-size: 15px;
 	font-weight: 700;
-	padding: 20px 25px;
+	padding: 3% 3%;
+	margin: 21% auto 10% 15%;
+	text-align: center;
 	border-radius: 3px;
 	border-width: 4px;
 	background-color: #fbd457;
@@ -104,34 +76,42 @@ body {
 	text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
-	/* body.masthead {
-		position: relative;
-		text-align: left;
-		color: white;
-		background-image: url("./img/header-bg.jpg");
-		background-repeat: no-repeat;
-		background-attachment: scroll;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-	} */
-
-	/* .btn-xl {
+@media (max-width: 430px) {
+	.btn-xl {
+		z-index: 1;
+		width: 27%;
 		position: absolute;
 		color: #603b1a;
-		font-size: 18px;
+		font-size: 15px;
 		font-weight: 700;
-		padding: 20px 40px;
-		margin: 249px 0 188px 0;
+		padding: 3% 3%;
+		margin: 21% auto 10% 11%;
+		text-align: center;
 		border-radius: 3px;
 		border-width: 4px;
 		background-color: #fbd457;
 		border-color: #603b1a;
 		font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 		text-transform: uppercase;
-	} */
+	}
+}
+
+@media (min-width: 768px) {
+	.btn-xl {
+		position: absolute;
+		width: 15%;
+		color: #603b1a;
+		font-size: 18px;
+		font-weight: 700;
+		padding: 20px 40px;
+		margin: 20% auto 10% 0;
+		border-radius: 3px;
+		border-width: 4px;
+		background-color: #fbd457;
+		border-color: #603b1a;
+		font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		text-transform: uppercase;
+	}
 }
 
 .form_error span {
@@ -142,6 +122,9 @@ body {
 .form_error input {
 	border: 1px solid #D83D5A;
 }
+
+
+/* index.html ends */
 
 
 /*Styling in case no errors on form*/
@@ -160,6 +143,3 @@ body {
 	text-align: center;
 	margin: 10px auto;
 }
-
-
-/* index.html ends */
