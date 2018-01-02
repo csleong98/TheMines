@@ -5,7 +5,7 @@
 	$sqlcheck = "SELECT * FROM team";
 	$result_check = mysqli_query($db, $sqlcheck);
 
-	if (mysqli_num_rows($result_check)>=100) {
+	if (mysqli_num_rows($result_check)>=61) {
 		echo "<script>alert('Registration closed');";
         echo "window.location.href='./index.html';</script>";
 	}
